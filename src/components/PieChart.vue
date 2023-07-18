@@ -22,7 +22,8 @@ export default {
         datasets: [ { data: [40, 20, 120, 150, 100, 400, 350] } ]
       },
       chartOptions: {
-        responsive: true
+        responsive: true,
+        cutoutPercentage: 60
       }
     }
   }

@@ -1,4 +1,5 @@
 <template>
+
   <Bar
     id="my-chart-id"
     :options="chartOptions"
@@ -22,9 +23,11 @@ export default {
         datasets: [ { data: [40, 20, 12, 50, 100, 400, 350, 450] } ]
       },
       chartOptions: {
-        responsive: true
+        responsive: true,
+        cutoutPercentage: 60 //Controls the size
       }
     }
   }
 }
 </script>
+
