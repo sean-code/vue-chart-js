@@ -4,6 +4,7 @@
            id="my-chart-id"
            :options="chartOptions"
            :data="chartData"
+           :style="{ width: '80%', margin: '0 auto' }"
          />
      </div>
   </template>

@@ -1,10 +1,14 @@
 <template>
 
-  <Bar
-    id="my-chart-id"
-    :options="chartOptions"
-    :data="chartData"
-  />
+  <div class="chart-container">
+    <Bar
+      id="my-chart-id"
+      :options="chartOptions"
+      :data="chartData"
+      :style="{ width: '200%', margin: '0 auto' }"
+    />
+  </div>
+
 </template>
 
 <script>
@@ -20,7 +24,18 @@ export default {
     return {
       chartData: {
         labels: [ 'January', 'February', 'March', "April", "May", "June", "July" ],
-        datasets: [ { data: [40, 20, 12, 50, 100, 400, 350, 450] } ]
+        datasets: [ {
+          data: [100, 80, 12, 50, 100, 400, 350, 450],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.8)', // Red
+            'rgba(54, 162, 235, 0.8)', // Blue
+            'rgba(255, 206, 86, 0.8)', // Yellow
+            'rgba(75, 192, 192, 0.8)', // Green
+            'rgba(153, 102, 255, 0.8)', // Purple
+            'rgba(255, 159, 64, 0.8)', // Orange
+            'rgba(94, 94, 94, 0.8)'    // Dark Gray
+          ],
+        } ]
       },
       chartOptions: {
         responsive: true,
@@ -31,3 +46,10 @@ export default {
 }
 </script>
 
+
+
+<style>
+.chart-container {
+  text-align: center;
+}
+</style>
