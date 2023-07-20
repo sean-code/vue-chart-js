@@ -1,7 +1,7 @@
 # practicechart
 
 
-[View This Work Here](sean-vue-chart-js.vercel.app)
+[View This Work Here](https://sean-vue-chart-js.vercel.app/)
 
 ## Project setup
 ```
