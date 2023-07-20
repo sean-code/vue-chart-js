@@ -1,5 +1,8 @@
 # practicechart
 
+
+[View This Work Here](sean-vue-chart-js.vercel.app)
+
 ## Project setup
 ```
 npm install
